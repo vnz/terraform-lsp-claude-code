@@ -23,9 +23,19 @@
         "terraform": {
           "command": "terraform-ls",
           "args": ["serve"],
+          "initializationOptions": {
+            "experimentalFeatures": {
+              "validateOnSave": true,
+              "prefillRequiredFields": true
+            },
+            "validation": {
+              "enableEnhancedValidation": true
+            }
+          },
           "extensionToLanguage": {
             ".tf": "terraform",
-            ".tfvars": "terraform"
+            ".tfvars": "terraform",
+            ".tftest.hcl": "terraform"
           }
         }
       }
