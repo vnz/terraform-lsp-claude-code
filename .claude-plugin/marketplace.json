@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "terraform-lsp",
-      "description": "Terraform language server (terraform-ls) for code intelligence, go-to-definition, find-references, and hover docs in .tf files",
+      "description": "Terraform language server (terraform-ls) for code intelligence, go-to-definition, find-references, and hover docs in Terraform files (.tf, .tfvars, .tftest.hcl)",
       "version": "1.0.0",
       "author": {
         "name": "vnz"

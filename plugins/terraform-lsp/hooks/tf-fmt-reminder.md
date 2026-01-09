@@ -6,12 +6,12 @@ match_tools:
 
 # Terraform Format Reminder Hook
 
-When the user is about to run a git commit that includes Terraform files (.tf, .tfvars), check if `terraform fmt` should be run first.
+When the user is about to run a git commit that includes Terraform files (.tf, .tfvars, .tftest.hcl), check if `terraform fmt` should be run first.
 
 ## Detection
 
 Look for git commit commands that may include Terraform files:
-- `git commit` (check staged files for .tf/.tfvars)
+- `git commit` (check staged files for .tf/.tfvars/.tftest.hcl)
 - `git add . && git commit` patterns
 
 ## Action

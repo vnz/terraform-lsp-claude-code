@@ -1,25 +1,5 @@
 {
   "name": "terraform-lsp",
-  "description": "Terraform language server (terraform-ls) for code intelligence, go-to-definition, find-references, and hover docs in .tf files",
-  "version": "1.0.0",
-  "lspServers": {
-    "terraform": {
-      "command": "terraform-ls",
-      "args": ["serve"],
-      "initializationOptions": {
-        "experimentalFeatures": {
-          "validateOnSave": true,
-          "prefillRequiredFields": true
-        },
-        "validation": {
-          "enableEnhancedValidation": true
-        }
-      },
-      "extensionToLanguage": {
-        ".tf": "terraform",
-        ".tfvars": "terraform",
-        ".tftest.hcl": "terraform"
-      }
-    }
-  }
+  "description": "Terraform language server (terraform-ls) for code intelligence, go-to-definition, find-references, and hover docs in Terraform files (.tf, .tfvars, .tftest.hcl)",
+  "version": "1.0.0"
 }
