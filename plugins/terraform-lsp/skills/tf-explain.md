@@ -48,6 +48,12 @@ Provide explanations covering:
 - Highlight RBAC implications
 - Mention resource limits/requests
 
+### Terraform Cloud / Enterprise (tfe_*)
+- Note workspace and organization structure
+- Highlight remote state and run implications
+- Mention Sentinel policies and run triggers
+- Consider variable sets and workspace variables
+
 ## Example Interaction
 
 User: "What does this aws_security_group resource do?"

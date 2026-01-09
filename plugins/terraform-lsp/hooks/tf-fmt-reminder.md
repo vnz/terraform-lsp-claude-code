@@ -10,9 +10,13 @@ When the user is about to run a git commit that includes Terraform files (.tf, .
 
 ## Detection
 
-Look for git commit commands that may include Terraform files:
-- `git commit` (check staged files for .tf/.tfvars/.tftest.hcl)
-- `git add . && git commit` patterns
+This hook triggers on Bash tool calls. Look for git commit patterns:
+- Commands containing `git commit` (not `git checkout`, `git config`, etc.)
+- `git add . && git commit` or `git add -A && git commit` chains
+
+When detected, check if Terraform files are staged:
+- Run `git diff --cached --name-only` to list staged files
+- Look for files matching `.tf`, `.tfvars`, or `.tftest.hcl` extensions
 
 ## Action
 
