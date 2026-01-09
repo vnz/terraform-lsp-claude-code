@@ -23,8 +23,15 @@ go install github.com/hashicorp/terraform-ls@latest
 # macOS with Homebrew
 brew install hashicorp/tap/terraform-ls
 
+# Windows with Chocolatey
+choco install terraform-ls
+
+# Windows with Scoop
+scoop bucket add hashicorp https://github.com/hashicorp/scoop-hashicorp.git
+scoop install terraform-ls
+
 # Verify installation
-which terraform-ls
+which terraform-ls  # or 'where terraform-ls' on Windows
 ```
 
 ## Installation
@@ -55,7 +62,7 @@ Add to your `~/.claude/settings.json`:
 
 ## Usage
 
-Once installed, Claude Code will automatically use the Terraform LSP for `.tf` and `.tfvars` files.
+Once installed, Claude Code will automatically use the Terraform LSP for `.tf`, `.tfvars`, and `.tftest.hcl` files.
 
 Ask Claude to use LSP features:
 
@@ -71,6 +78,7 @@ Ask Claude to use LSP features:
 |-----------|----------|
 | `.tf` | Terraform |
 | `.tfvars` | Terraform Variables |
+| `.tftest.hcl` | Terraform Tests (1.6+) |
 
 ## Troubleshooting
 

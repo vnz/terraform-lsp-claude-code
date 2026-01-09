@@ -1,38 +1,32 @@
 # terraform-lsp
 
-Terraform language server for Claude Code, providing code intelligence for infrastructure as code.
+Terraform language server plugin for Claude Code.
 
-## Features
+## Quick Reference
 
-- **Go to Definition** - Jump to resource, variable, and module definitions
-- **Find References** - Find all usages of resources and variables
-- **Hover Documentation** - See resource documentation inline
-- **Code Diagnostics** - Real-time validation and error checking
+| Extension | Description |
+|-----------|-------------|
+| `.tf` | Terraform configuration |
+| `.tfvars` | Variable definitions |
+| `.tftest.hcl` | Terraform test files |
 
-## Supported Extensions
+## LSP Features
 
-- `.tf` - Terraform configuration files
-- `.tfvars` - Terraform variable files
+- **goToDefinition** - Navigate to resource/variable/module definitions
+- **findReferences** - Find all usages across your codebase
+- **hover** - Inline documentation for resources and attributes
+- **diagnostics** - Real-time validation and error checking
 
 ## Prerequisites
 
-Install terraform-ls (HashiCorp's official Terraform Language Server):
-
-```bash
-# Using Go
-go install github.com/hashicorp/terraform-ls@latest
-
-# Or on macOS with Homebrew
-brew install hashicorp/tap/terraform-ls
-```
-
-Make sure `terraform-ls` is in your PATH:
-```bash
-which terraform-ls
-```
+Requires [terraform-ls](https://github.com/hashicorp/terraform-ls) in your PATH.
 
 ## More Information
 
+See the [main README](../../README.md) for installation and usage instructions.
+
+## Links
+
 - [terraform-ls Documentation](https://github.com/hashicorp/terraform-ls)
-- [HashiCorp Terraform](https://www.terraform.io/)
 - [Terraform Language Server Usage](https://github.com/hashicorp/terraform-ls/blob/main/docs/USAGE.md)
+- [HashiCorp Terraform](https://www.terraform.io/)
