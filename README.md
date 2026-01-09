@@ -62,7 +62,7 @@ Add to your `~/.claude/settings.json`:
 
 ## Usage
 
-Once installed, Claude Code will automatically use the Terraform LSP for `.tf` and `.tfvars` files.
+Once installed, Claude Code will automatically use the Terraform LSP for `.tf`, `.tfvars`, and `.tftest.hcl` files.
 
 Ask Claude to use LSP features:
 
